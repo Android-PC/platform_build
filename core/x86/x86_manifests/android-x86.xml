@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="maurossi" fetch="https://github.com/maurossi" />
+  <remote name="x86" fetch="http://scm.osdn.net/gitroot/android-x86" />
+  <remote name="android-pc" fetch="https://github.com/Android-PC" />
+  
+  <remote name="celadon" fetch="https://github.com/projectceladon/" />
+  <remote name="kernelorg" fetch="https://git.kernel.org/" />
+  <remote name="graphics" fetch="https://github.com/01org/" />
+  <remote name="intel" fetch="https://github.com/intel" />
+  <remote name="trusty-ia" fetch="https://github.com/trusty-ia" />
+  <remote name="aquynh" fetch="https://github.com/aquynh" />
+  
+  <!-- Modified or unnecessary AOSP projects -->
+  
+  <remove-project name="device/generic/common" />
+  <remove-project name="device/generic/qemu" />
+  <remove-project name="device/generic/x86" />
+  <remove-project name="device/generic/x86_64" />
+  <remove-project name="platform/hardware/intel/audio_media" />
+  <remove-project name="platform/hardware/intel/bootstub" />
+  <remove-project name="platform/hardware/intel/common/bd_prov" />
+  <remove-project name="platform/hardware/intel/common/libmix" />
+  <remove-project name="platform/hardware/intel/common/libstagefrighthw" />
+  <remove-project name="platform/hardware/intel/common/libva" />
+  <remove-project name="platform/hardware/intel/common/libwsbm" />
+  <remove-project name="platform/hardware/intel/common/omx-components" />
+  <remove-project name="platform/hardware/intel/common/utils" />
+  <remove-project name="platform/hardware/intel/common/wrs_omxil_core" />
+  <remove-project name="platform/hardware/intel/img/hwcomposer" />
+  <remove-project name="platform/hardware/intel/img/psb_headers" />
+  <remove-project name="platform/hardware/intel/img/psb_video" />
+  <remove-project name="platform/hardware/intel/sensors" />
+  <remove-project name="platform/external/drm_gralloc" />
+  <remove-project name="platform/external/libdrm" />
+  <remove-project name="platform/external/libusb-compat" />
+  <remove-project name="platform/external/mesa3d" />
+  <remove-project name="platform/external/swiftshader" />
+  
+  <project path="vendor/x86" name="vendor_x86" remote="android-pc" revision="p9.0" />
+  <project path="kernel" name="kernel_common" remote="android-pc" revision="kernel-4.9" />
+  <project path="device/generic/firmware" name="platform_device_generic_firmware" remote="android-pc" revision="dev-kernel.org" /> 
+  <project path="external/mesa" name="platform_mesa" remote="android-pc" revision="18.3.0-devel_w33" />
+  <project path="external/llvm70" name="llvm" remote="maurossi" revision="oreo-x86_llvm70_release_70" groups="pdk" />
+  
+  <!-- From Android-x86 repositories -->
+
+  <project path="bootable/newinstaller" name="bootable_newinstaller" remote="android-pc" revision="p9.0" />
+  <project path="device/generic/common" name="device_generic_common" remote="android-pc" revision="p9.0" />
+  <project path="device/generic/x86" name="device/generic/x86" remote="x86" revision="oreo-x86" />
+  <project path="device/generic/x86_64" name="device/generic/x86_64" remote="x86" revision="oreo-x86" />
+  <project path="external/alsa-lib" name="platform_external_alsa-lib" remote="android-pc" revision="p9.0" />
+  <project path="external/alsa-utils" name="platform_external_alsa-utils" remote="android-pc" revision="p9.0" />
+  <project path="external/bluetooth/bluez" name="platform_external_bluetooth_bluez" remote="android-pc" revision="p9.0" />
+  <project path="external/busybox" name="platform_external_busybox" remote="android-pc" revision="p9.0" />
+  <project path="external/efibootmgr" name="platform/external/efibootmgr" remote="x86" revision="oreo-x86" />
+  <project path="external/efivar" name="platform_external_efivar" remote="android-pc" revision="p9.0" />
+  <project path="external/eject" name="platform_external_eject" remote="android-pc" revision="p9.0" />
+  <project path="external/exfat" name="platform_external_exfat" remote="android-pc" revision="p9.0" />
+  <project path="external/koush/Superuser" name="platform_external_koush_Superuser" remote="android-pc" revision="p9.0" />
+  <project path="external/koush/Widgets" name="platform/external/koush/Widgets" remote="x86" revision="oreo-x86" />
+  <project path="external/drm_gralloc" name="platform_external_drm_gralloc" remote="android-pc" revision="p9.0" />
+  <project path="external/gbm_gralloc" name="platform/external/gbm_gralloc" remote="x86" revision="oreo-x86" />
+  <project path="external/ffmpeg" name="platform/external/ffmpeg" remote="x86" revision="oreo-x86" />
+  <project path="external/libdrm" name="platform/external/libdrm" remote="x86" revision="oreo-x86" />
+  <project path="external/swiftshader" name="platform/external/swiftshader" remote="x86" revision="oreo-x86" />
+  <project path="external/ntfs-3g" name="platform_external_ntfs-3g" remote="android-pc" revision="p9.0" />
+  <project path="external/s2tc" name="platform_external_s2tc" remote="android-pc" revision="p9.0" />
+  <project path="external/v86d" name="platform_external_v86d" remote="android-pc" revision="p9.0" />
+  <project path="hardware/gps" name="platform_hardware_gps" remote="android-pc" revision="p9.0" />
+  <project path="hardware/intel/audio_media" name="platform/hardware/intel/audio_media" remote="x86" revision="oreo-x86" />
+  <project path="hardware/intel/common/libva" name="platform_hardware_intel_common_libva" remote="android-pc" revision="p9.0" />
+  <project path="hardware/intel/common/vaapi" name="platform_hardware_intel_common_vaapi" remote="android-pc" revision="p9.0" />
+  <project path="hardware/intel/libsensors" name="platform/hardware/intel/libsensors" remote="x86" revision="oreo-x86" />
+  <project path="hardware/libaudio" name="platform_hardware_libaudio" remote="android-pc" revision="p9.0" />
+  <project path="hardware/libcamera" name="platform_hardware_libcamera" remote="android-pc" revision="p9.0" />
+  <project path="hardware/liblights" name="platform/hardware/liblights" remote="x86" revision="oreo-x86" />
+  <project path="hardware/libsensors" name="platform_hardware_libsensors" remote="android-pc" revision="p9.0" />
+  <project path="hardware/x86power" name="hardware-x86power" remote="android-pc" revision="p9.0" />
+  <project path="packages/apps/TSCalibration2" name="packages_apps_TSCalibration2" remote="android-pc" revision="p9.0" />
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.6" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.6" remote="aosp" revision="master" clone-depth="1" />
+  <project path="external/bison" name="platform/external/bison" remote="aosp" groups="pdk" revision="master" />
+  
+  <project groups="aosp,pdk" name="platform/hardware/bsp/intel" path="hardware/bsp/intel" remote="aosp" revision="refs/tags/android-7.1.1_r6" />
+  
+  <!-- START X86 INSTALLER -->
+  <project path="x86_installer" name="BlissRoms-x86/Androidx86-Installer-for-Windows" revision="master" remote="github" /> -->
+  <!-- END X86 INSTALLER -->
+
+</manifest>

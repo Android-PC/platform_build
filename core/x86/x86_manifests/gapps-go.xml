@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+<remote name="phh" fetch="https://github.com/phhusson/" />
+
+<project path="vendor/gapps-go" name="gapps-go" remote="phh" revision="master" />
+
+</manifest>
